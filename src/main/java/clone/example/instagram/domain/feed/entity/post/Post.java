@@ -1,4 +1,4 @@
-package clone.example.instagram.domain.feed.entity;
+package clone.example.instagram.domain.feed.entity.post;
 
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;

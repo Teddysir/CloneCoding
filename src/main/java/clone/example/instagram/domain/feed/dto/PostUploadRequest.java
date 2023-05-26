@@ -1,10 +1,8 @@
 package clone.example.instagram.domain.feed.dto;
 
 
-import clone.example.instagram.domain.feed.entity.Post;
+import clone.example.instagram.domain.feed.entity.post.Post;
 import lombok.*;
-
-import javax.validation.constraints.Size;
 
 
 @Getter
