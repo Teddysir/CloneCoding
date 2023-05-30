@@ -1,4 +1,4 @@
-package clone.example.instagram.domain.feed.dto;
+package clone.example.instagram.domain.feed.dto.post;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package clone.example.instagram.domain.feed.dto;
+package clone.example.instagram.domain.feed.dto.post;
 
 
 import clone.example.instagram.domain.feed.entity.post.Post;

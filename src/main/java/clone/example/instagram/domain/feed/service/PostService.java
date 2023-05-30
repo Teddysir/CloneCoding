@@ -1,7 +1,7 @@
 package clone.example.instagram.domain.feed.service;
 
-import clone.example.instagram.domain.feed.dto.PostUpdateDto;
-import clone.example.instagram.domain.feed.dto.PostUploadRequest;
+import clone.example.instagram.domain.feed.dto.post.PostUpdateDto;
+import clone.example.instagram.domain.feed.dto.post.PostUploadRequest;
 import clone.example.instagram.domain.feed.entity.post.Post;
 import clone.example.instagram.domain.feed.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
