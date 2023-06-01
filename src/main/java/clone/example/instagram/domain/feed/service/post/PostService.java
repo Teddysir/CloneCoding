@@ -1,9 +1,9 @@
-package clone.example.instagram.domain.feed.service;
+package clone.example.instagram.domain.feed.service.post;
 
 import clone.example.instagram.domain.feed.dto.post.PostUpdateDto;
 import clone.example.instagram.domain.feed.dto.post.PostUploadRequest;
 import clone.example.instagram.domain.feed.entity.post.Post;
-import clone.example.instagram.domain.feed.repository.PostRepository;
+import clone.example.instagram.domain.feed.repository.post.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

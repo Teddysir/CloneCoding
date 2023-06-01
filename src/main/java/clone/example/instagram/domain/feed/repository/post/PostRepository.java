@@ -1,4 +1,4 @@
-package clone.example.instagram.domain.feed.repository;
+package clone.example.instagram.domain.feed.repository.post;
 
 import clone.example.instagram.domain.feed.entity.post.Post;
 import org.springframework.data.jpa.repository.JpaRepository;

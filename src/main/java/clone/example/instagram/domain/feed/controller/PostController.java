@@ -3,7 +3,7 @@ package clone.example.instagram.domain.feed.controller;
 import clone.example.instagram.domain.feed.dto.post.PostUpdateDto;
 import clone.example.instagram.domain.feed.dto.post.PostUploadRequest;
 import clone.example.instagram.domain.feed.entity.post.Post;
-import clone.example.instagram.domain.feed.service.PostService;
+import clone.example.instagram.domain.feed.service.post.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

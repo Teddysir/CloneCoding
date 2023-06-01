@@ -1,10 +1,7 @@
-package clone.example.instagram.domain.feed.entity.board.member;
+package clone.example.instagram.domain.feed.entity.member;
 
 import clone.example.instagram.domain.feed.entity.BaseTimeEntity;
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -20,6 +17,7 @@ import java.util.Collection;
 @NoArgsConstructor
 @Getter
 @Entity
+@Data
 public class Member extends BaseTimeEntity implements UserDetails {
 
     private static final long serialVersionUID = 1L;
