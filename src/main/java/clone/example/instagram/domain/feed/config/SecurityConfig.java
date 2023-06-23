@@ -44,7 +44,7 @@ public class SecurityConfig {
              .and()
                 .formLogin()
                 .loginPage("/login")
-                .loginProcessingUrl("/login/action")
+                .loginProcessingUrl("/joinProc")
                 .successHandler(authSuccessHandler)
                 .failureHandler(authFailureHandler)
              .and()

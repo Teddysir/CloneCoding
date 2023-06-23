@@ -23,7 +23,7 @@ public class AuthSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
 
         memberRepository.updateMemberLastLogin(authentication.getName(), LocalDateTime.now());
-        setDefaultTargetUrl("/post/list");
+        setDefaultTargetUrl("/member/login");
 
         super.onAuthenticationSuccess(request, response, authentication);
     }
