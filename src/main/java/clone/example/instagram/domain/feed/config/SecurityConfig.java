@@ -49,7 +49,7 @@ public class SecurityConfig {
                 .failureHandler(authFailureHandler)
              .and()
                 .logout()
-                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                .logoutRequestMatcher(new AntPathRequestMatcher("/login"))
                 .logoutSuccessUrl("/login")
                 .invalidateHttpSession(true) // 인증정보를 지우고 세션을 무효화
                 .deleteCookies("JSESSIONID") //JSESSIONID 쿠키 삭제
