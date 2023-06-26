@@ -16,4 +16,5 @@ public class MemberDto {
         this.email = member.getEmail();
         this.pwd = member.getPwd();
     }
+
 }

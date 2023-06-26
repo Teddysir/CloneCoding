@@ -1,14 +1,12 @@
 package clone.example.instagram.domain.feed.entity.member;
 
 import clone.example.instagram.domain.feed.entity.BaseTimeEntity;
+import com.sun.istack.NotNull;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,18 +23,18 @@ public class Member extends BaseTimeEntity implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false)
     private String email;
+
+    @NotNull
+    @Column(nullable = false)
     private String pwd;
+
+    @Column(nullable = false)
     private LocalDateTime lastLoginTime;
 
-    @Builder
-    public Member(Long id,String email,String pwd, LocalDateTime lastLoginTime){
-        super();
-        this.id = id;
-        this.email = email;
-        this.pwd = pwd;
-        this.lastLoginTime = lastLoginTime;
-    }
+
 
     @Override
     public String getPassword() {

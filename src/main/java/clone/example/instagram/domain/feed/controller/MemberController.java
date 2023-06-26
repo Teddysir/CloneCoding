@@ -19,7 +19,7 @@ public class MemberController {
 
 
     @PostMapping("/login")
-    public ResponseEntity<String> getLoginPage(@RequestBody MemberDto memberDto) {
+    public ResponseEntity<String> login(@RequestBody MemberDto memberDto) {
         String email = memberDto.getEmail();
         String pwd = memberDto.getPwd();
 
@@ -33,7 +33,7 @@ public class MemberController {
     }
 
     @PostMapping("/joinProc")
-    public ResponseEntity<String> getJoinProcPage(@RequestBody Member member){
+    public ResponseEntity<String> joinProc(@RequestBody Member member){
         String rawPassword = member.getPassword();
         String encPassword = passwordEncoder.encode(rawPassword);
         member.setPwd(encPassword);
