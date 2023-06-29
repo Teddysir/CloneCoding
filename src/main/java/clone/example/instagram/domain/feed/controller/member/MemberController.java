@@ -1,4 +1,4 @@
-package clone.example.instagram.domain.feed.controller;
+package clone.example.instagram.domain.feed.controller.member;
 
 import clone.example.instagram.domain.feed.dto.member.MemberDto;
 import clone.example.instagram.domain.feed.entity.member.Member;

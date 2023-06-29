@@ -1,4 +1,4 @@
-package clone.example.instagram.domain.feed.controller;
+package clone.example.instagram.domain.feed.controller.post;
 
 import clone.example.instagram.domain.feed.dto.post.PostUpdateDto;
 import clone.example.instagram.domain.feed.dto.post.PostUploadRequest;
