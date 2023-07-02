@@ -42,8 +42,8 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ AKIA42B4PCDCR3WCCCFA }} # ecrets.AWS_ACCESS_KEY_ID
-        aws-secret-access-key: ${{ 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 }} # secrets.AWS_SECRET_ACCESS_KEY
+        aws-access-key-id: ${{ "AKIA42B4PCDCR3WCCCFA" }} # ecrets.AWS_ACCESS_KEY_ID
+        aws-secret-access-key: ${{ "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" }} # secrets.AWS_SECRET_ACCESS_KEY
         aws-region: ${{ env.AWS_REGION }}
 
     # (5) 빌드 결과물을 S3 버킷에 업로드
