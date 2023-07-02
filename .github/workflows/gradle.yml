@@ -10,6 +10,8 @@ env:
   S3_BUCKET_NAME: studyinsta
   CODE_DEPLOY_APPLICATION_NAME: codedeploy-app
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: codedeploy-deployment-group
+  AWS_ACCESS_KEY_ID: AKIA42B4PCDCR3WCCCFA
+  AWS_SECRET_ACCESS_KEY: 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
 
 permissions:
   contents: read
@@ -42,8 +44,8 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ "AKIA42B4PCDCR3WCCCFA" }} # ecrets.AWS_ACCESS_KEY_ID
-        aws-secret-access-key: ${{ "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" }} # secrets.AWS_SECRET_ACCESS_KEY
+        aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }} # ecrets.AWS_ACCESS_KEY_ID
+        aws-secret-access-key: ${{ env.AWS_ACCESS_KEY_ID }} # secrets.AWS_SECRET_ACCESS_KEY
         aws-region: ${{ env.AWS_REGION }}
 
     # (5) 빌드 결과물을 S3 버킷에 업로드
