@@ -19,7 +19,7 @@ permissions:
 jobs:
   deploy:
     name: Deploy
-    runs-on: amazonlinux-2
+    runs-on: amazonlinux
     environment: production
 
     steps:
