@@ -13,7 +13,6 @@ permissions:
     group: ec2-user
 
 hooks:
-  BeforeInstall:
   AfterInstall:
     - location: scripts/stop.sh
       timeout: 60
