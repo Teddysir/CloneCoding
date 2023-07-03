@@ -2,7 +2,7 @@ version: 0.0
 os: amazonlinux
 
 files:
-  - source:  /
+  - source: /
     destination: /home/ec2-user/app
     overwrite: yes
 
@@ -13,6 +13,7 @@ permissions:
     group: ec2-user
 
 hooks:
+  BeforeInstall:
   AfterInstall:
     - location: scripts/stop.sh
       timeout: 60
